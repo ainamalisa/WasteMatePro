@@ -4,7 +4,7 @@ Project Goal:
 The goal of the "WasteMate Pro" app project is to create a user-friendly mobile application that assists students and staff at University Malaya in efficiently managing their waste on campus.  
 
 Project Scope: 
-1.Target users are University Malaya students, lecturers and staffs. 
+1. Target users are University Malaya students, lecturers and staffs. 
 2. Platform collect and maintain a database of trash bin locations across the university campus.   
 3. Platform will include a feature for users to provide feedback on the condition of trash bins and report any issues they encounter. 
 4. Platform provide training and user guides to help individuals use the app effectively and promote its usage within the university community.
