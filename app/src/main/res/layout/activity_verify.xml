@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/palegreen"
-    tools:context=".ForgotPasswordActivity">
+    android:backgroundTint="@color/palegreen"
+    tools:context=".VerifyActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -22,16 +23,16 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/CVForgot"
+            android:id="@+id/CVVerify"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/TVForgotTitle"
+                android:id="@+id/TVVerifyTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="Forgot Password?"
+                android:text="Enter email to verify"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -40,7 +41,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/ETEmailForgot"
+                android:id="@+id/ETCode"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -54,45 +55,35 @@
                 android:textColor="#80000000"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/TVForgotTitle" />
+                app:layout_constraintTop_toBottomOf="@+id/TVVerifyTitle" />
 
             <TextView
-                android:id="@+id/TVForgotBackto"
+                android:id="@+id/TVResendCode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Back to"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Resend email"
                 android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="@+id/ETEmailForgot"
-                app:layout_constraintTop_toBottomOf="@+id/ETEmailForgot" />
-
-            <TextView
-                android:id="@+id/TVForgotLogin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="16dp"
-                android:text="Login"
-                android:textColor="@color/toolBackground"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/TVForgotBackto"
-                app:layout_constraintTop_toBottomOf="@+id/ETEmailForgot" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ETCode" />
 
             <Button
-                android:id="@+id/BtnSavePassword"
+                android:id="@+id/BtnVerify"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginEnd="40dp"
                 android:layout_marginBottom="32dp"
                 android:background="@drawable/btn_background"
-                android:text="FORGOT PASSWORD"
+                android:text="VERIFY"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

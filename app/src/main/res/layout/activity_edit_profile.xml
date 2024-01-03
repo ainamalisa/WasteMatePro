@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/palegreen"
+    tools:context=".Fragments.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/IVProfilePic"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="141dp"
+        android:src="@drawable/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVUsername3" />
+
+    <TextView
+        android:id="@+id/TVUsername3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/IVProfilePic"
+        app:layout_constraintStart_toStartOf="@+id/IVProfilePic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/VBack1"
+        android:layout_width="379dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        app:circularflow_radiusInDP="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVProfilePic" />
+
+    <TextView
+        android:id="@+id/TVEmailAddress3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Email Address"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ETProfilename"
+        app:layout_constraintTop_toBottomOf="@+id/ETProfilename" />
+
+    <TextView
+        android:id="@+id/TVEmailAddress4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="abc@gmail.com"
+        app:layout_constraintStart_toStartOf="@+id/TVEmailAddress3"
+        app:layout_constraintTop_toBottomOf="@+id/TVEmailAddress3" />
+
+    <TextView
+        android:id="@+id/TVPhonenumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Phone Number"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/TVEmailAddress4"
+        app:layout_constraintTop_toBottomOf="@+id/TVEmailAddress4" />
+
+    <TextView
+        android:id="@+id/TVLocation3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Location"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/VBack1"
+        app:layout_constraintTop_toBottomOf="@+id/ETPhonenumber" />
+
+    <TextView
+        android:id="@+id/TVUsername4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Username"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/VBack1"
+        app:layout_constraintTop_toTopOf="@+id/VBack1" />
+
+    <Button
+        android:id="@+id/BtnSave"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_background"
+        android:text="SAVE PROFILE"
+        app:layout_constraintEnd_toEndOf="@+id/VBack1"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/VBack1"
+        app:layout_constraintTop_toBottomOf="@+id/VBack1" />
+
+    <View
+        android:id="@+id/fetchImage"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="@+id/IVProfilePic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/IVProfilePic"
+        app:layout_constraintTop_toTopOf="@+id/IVProfilePic" />
+
+    <EditText
+        android:id="@+id/ETProfilename"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/VBack1"
+        app:layout_constraintStart_toStartOf="@+id/VBack1"
+        app:layout_constraintTop_toBottomOf="@+id/TVUsername4" />
+
+    <EditText
+        android:id="@+id/ETPhonenumber"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="+60-1********"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/VBack1"
+        app:layout_constraintStart_toStartOf="@+id/VBack1"
+        app:layout_constraintTop_toBottomOf="@+id/TVPhonenumber3" />
+
+    <EditText
+        android:id="@+id/ETAddress"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="place"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/VBack1"
+        app:layout_constraintStart_toStartOf="@+id/VBack1"
+        app:layout_constraintTop_toBottomOf="@+id/TVLocation3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

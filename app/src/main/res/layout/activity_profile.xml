@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/palegreen"
+    tools:context=".Fragments.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/IVProfilePic"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="141dp"
+        android:src="@drawable/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVUsername" />
+
+    <TextView
+        android:id="@+id/TVUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/IVProfilePic"
+        app:layout_constraintStart_toStartOf="@+id/IVProfilePic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/VBack"
+        android:layout_width="379dp"
+        android:layout_height="282dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        app:circularflow_radiusInDP="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVProfilePic" />
+
+    <TextView
+        android:id="@+id/TVUsername2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="username"
+        app:layout_constraintStart_toStartOf="@+id/TVUsername1"
+        app:layout_constraintTop_toBottomOf="@+id/TVUsername1" />
+
+    <TextView
+        android:id="@+id/TVEmailAddress1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Email Address"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/TVUsername2"
+        app:layout_constraintTop_toBottomOf="@+id/TVUsername2" />
+
+    <TextView
+        android:id="@+id/TVEmailAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="abc@gmail.com"
+        app:layout_constraintStart_toStartOf="@+id/TVEmailAddress1"
+        app:layout_constraintTop_toBottomOf="@+id/TVEmailAddress1" />
+
+    <TextView
+        android:id="@+id/TVPhonenumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Phone Number"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/TVEmailAddress2"
+        app:layout_constraintTop_toBottomOf="@+id/TVEmailAddress2" />
+
+    <TextView
+        android:id="@+id/TVPhonenumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="+60-123456789"
+        app:layout_constraintStart_toStartOf="@+id/TVPhonenumber1"
+        app:layout_constraintTop_toBottomOf="@+id/TVPhonenumber1" />
+
+    <TextView
+        android:id="@+id/TVLocation1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Location"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/TVPhonenumber2"
+        app:layout_constraintTop_toBottomOf="@+id/TVPhonenumber2" />
+
+    <TextView
+        android:id="@+id/TVLocation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Place"
+        app:layout_constraintStart_toStartOf="@+id/TVLocation1"
+        app:layout_constraintTop_toBottomOf="@+id/TVLocation1" />
+
+    <TextView
+        android:id="@+id/TVUsername1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Username"
+        android:textColor="@color/background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/VBack"
+        app:layout_constraintTop_toTopOf="@+id/VBack" />
+
+    <Button
+        android:id="@+id/BtnEdit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_background"
+        android:text="EDIT PROFILE"
+        app:layout_constraintEnd_toEndOf="@+id/VBack"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/VBack"
+        app:layout_constraintTop_toBottomOf="@+id/VBack" />
+
+    <View
+        android:id="@+id/fetchImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/IVProfilePic"
+        app:layout_constraintEnd_toEndOf="@+id/IVProfilePic"
+        app:layout_constraintStart_toStartOf="@+id/IVProfilePic"
+        app:layout_constraintTop_toTopOf="@+id/IVProfilePic" />
+</androidx.constraintlayout.widget.ConstraintLayout>

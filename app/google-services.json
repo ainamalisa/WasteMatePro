@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "621163981652",
+    "project_id": "wastemate-pro",
+    "storage_bucket": "wastemate-pro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621163981652:android:7723ea8a1d2d2baa11b6c1",
+        "android_client_info": {
+          "package_name": "com.example.wastematepro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp15dRlQfKWuWImGG5wq3HSYcELalkd_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

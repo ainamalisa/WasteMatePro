@@ -2,17 +2,28 @@ package com.example.wastematepro.Models;
 
 public class UserModel {
 
-    private String name,email,password,profile,referCode,redeemStatus;
+    private String name;
+    private String email;
+    private String password;
+    private String profile;
+    private String referCode;
+    private String redeemStatus;
+    private String role;
+    private String address;
+    private String phoneNumber;
     private int coins,spin,scratch;
     private String uId;
 
-    public UserModel(String name, String email, String password, String profile, String referCode, String redeemStatus, int coins, int spin, int scratch) {
+    public UserModel(String name, String email, String password, String profile, String referCode, String redeemStatus, String role, String address, String phoneNumber, int coins, int spin, int scratch) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.profile = profile;
         this.referCode = referCode;
         this.redeemStatus = redeemStatus;
+        this.role = role;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
         this.coins = coins;
         this.spin = spin;
         this.scratch = scratch;
@@ -68,6 +79,18 @@ public class UserModel {
     public void setRedeemStatus(String redeemStatus) {
         this.redeemStatus = redeemStatus;
     }
+
+    public String getRole() { return role; }
+
+    public void setRole(String role) { this.role = role; }
+
+    public String getAddress() { return address; }
+
+    public void setAddress(String address) { this.address = address; }
+
+    public String getPhoneNumber() { return phoneNumber; }
+
+    public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
 
     public int getCoins() {
         return coins;

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/palegreen"
-    tools:context=".SIgnUpActivity">
+    tools:context=".SignUpActivity">
 
     <View
         android:id="@+id/Vbackg"
@@ -14,7 +14,7 @@
         android:layout_marginTop="16dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/IViconapp" />
 
@@ -35,6 +35,30 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/Vbackg" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TILSelect"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETPassword">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_txt"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:inputType="none"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="460dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/TVEmail"
@@ -95,11 +119,11 @@
         app:layout_constraintTop_toBottomOf="@+id/TVPassword" />
 
     <Button
-        android:id="@+id/BtnLogin"
+        android:id="@+id/BtnLogin1"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/btn_background"
         android:backgroundTint="@color/black"
@@ -117,9 +141,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/BtnLogin"
-        app:layout_constraintStart_toStartOf="@+id/BtnLogin"
-        app:layout_constraintTop_toBottomOf="@+id/BtnLogin">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnLogin1">
 
         <TextView
             android:id="@+id/TVNoAccount"
@@ -131,7 +155,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/TVSignupHere"
+            android:id="@+id/TVSignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -146,7 +170,7 @@
         android:id="@+id/TVForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:text="Forgot password?"
         android:textColor="@color/background"
